@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(233, 224, 215, 0.855);
+}
+
+h1{
+    text-align: center;
+    font-family: Georgia;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    text-align: left;
+    font-family: monospace;
+}
+
+input{
+    border: 0px;
+    font-family: monospace;
+}
+
+button{
+    font-family: monospace;
+}
+
+.day{
+    width: max-content;
+}
+
+#Planner{
+    background-color: white;
+    width: 100%;
+}
+
+.Month{
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+    font-family: Courier, monospace;
+}
+
+#Calendar{
+    display: flex;
+    background-color:white;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 7px;
+}
+
+.week-day{
+    background-color: rgb(170,135,113);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    
+}
+
+.days-grid{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.day{
+    background-color: rgb(233,224,215);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Today{
+    background-color: rgb(170,135,113);
+    margin-left: 7%;
+    margin-right: 7%;
+    text-indent: 5px;
+    margin-bottom: 0px;
+}
+
+.todo-background{
+    background-color: white;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.input-area{
+    margin: 5px;
+    border: 1px;
+}
+
+#checklist li{
+    display:grid;
+    height: 20px;
+    grid-template-columns: 16px 90% auto;
+
+}
+
+#checklist p{
+    text-align: left;
+    top: 15px;
+}
+
+#checklist i{
+    color: darkred;
+    top: 3px;
+    font-size: 15px;
+    text-align: right;
+}
+
+#checklist i:hover{
+    color: red;
+    transition: 0.2s;
+}
+
+#checklist li{
+    cursor: pointer;
+    position: relative;
+    font-family: monospace;
+    background: rgb(245, 232, 218);
+    list-style: none;
+}
+
+#checklist img{
+    left: -1px;
+    width: 20px;
+    height: 20px;
+}
+
+#checklist li:nth-child(odd) {
+    background: rgb(251, 242, 233);
+  }
+
+
